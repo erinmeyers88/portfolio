@@ -1,0 +1,83 @@
+<menu></menu>
+
+<div class="portfolioWrapper">
+
+	<!--<div class="project">
+
+		<div class="projectTop">
+			<img class="thumbnail" src="./shared/img/SkyNautilus.png" alt="">
+
+			<div class="projectTopRight">
+				<div class="description">
+					<div class="title">SkyNautilus</div>
+					<div class="descriptionText">A new spin on a flight search engine and travel planning.</div>
+				</div>
+				<div class="viewButton">View</div>
+			</div>
+		</div>
+		<div class="projectBottom">
+			<div class="bottomSection">
+				<div class="bottomTitle">Features</div>
+				<div class="bottomText">
+					<ul>
+						<li>Search for a flight</li>
+					<li>Modify your search</li>
+					<li>Narrow down your search results</li>
+					<li>Save itinerary to a "trip"</li>
+					<li>View and edit saved trips</li>
+					</ul>
+					
+				</div>
+			</div>
+			
+			<div class="bottomSection">
+				<div class="bottomTitle">Technologies</div>
+				<div class="bottomText">
+					<ul>
+					<li>AngularJS</li>
+					<li>Node.js</li>
+					<li>Express</li>
+					<li>MongoDB</li>
+					<li>Passport Google OAuth</li>
+					<li>Google QPX API</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+<div class="project" ng-repeat="project in portfolioData">
+	<div class="projectTop">
+			<img class="thumbnail" ng-src="{{project.thumbnail}}" alt="">
+
+			<div class="projectTopRight">
+				<div class="description">
+					<div class="title">{{project.title}}</div>
+					<div class="descriptionText">{{project.description}}</div>
+				</div>
+				<div class="viewButton">View</div>
+			</div>
+		</div>
+		<div class="projectBottom">
+			<div class="bottomSection">
+				<div class="bottomTitle">Features</div>
+				<div class="bottomText">
+					<ul>
+						<li ng-repeat="feature in project.features">{{feature}}</li>
+					</ul>
+					
+				</div>
+			</div>
+			
+			<div class="bottomSection">
+				<div class="bottomTitle">Technologies</div>
+				<div class="bottomText">
+					<ul>
+					<li ng-repeat="technology in project.technologies">{{technology}}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
