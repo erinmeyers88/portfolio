@@ -1,16 +1,24 @@
 * {
 	box-sizing: border-box;
+	/*overflow-x: hidden;*/
+}
+
+html {
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-    min-width: 1025px;
+    /*min-width: 1025px;*/
     display: flex;
     flex-direction: column;
 	box-sizing: border-box;
 	height: auto;
+	background-color: rgb(255,255,250);
 	
 }
 
@@ -18,9 +26,9 @@ body {
 
 menu {
     margin: 0;
-	min-width: 1025px;
-	height: 75px;
-	/*background-color: rgb(255,255,250);*/
+	width: 100%;
+	height: 50px;
+	background-color: rgb(255,255,250);
 }
 
 .bold {
@@ -35,6 +43,7 @@ header {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	margin-left: 150px;
 }
 
  
@@ -46,7 +55,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 80%;
+    width: 70%;
 } 
 
 
@@ -61,103 +70,47 @@ a:visited {
 } 
  
 
-
-/*///////////////////////////*/
-
-
-
-/*.lowerHomePage {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-   
-}
- */
-
-
-
-
-.aboutWrapper {
+.homeTop {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	border-top: 1px solid rgb(54,58,60);
-	padding-top: 50px;
-	    align-items: center
-}
-
-.aboutTop {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
 	align-items: center;
-	width: 100%;
+	font: 300 100px/1.25 Helvetica, Verdana, sans-serif;
+  	/*color: rgb(255,255,250);*/
+	color: white;
+	height: 60%;
+	/*text-shadow: 1px 1px rgb(75, 185, 57); */
 }
 
-.aboutBottom {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	border-top: 1px solid rgb(54,58,60);
-	padding-top: 50px;
-	background-size: cover;
+.myTitle  {
+	font-size: 40px
 }
 
 
-/*.aboutArea {
-	width: 55%;
-	display: flex;
-	flex-direction: column;
-}*/
+/*HOME Parallax*/
 
 
-
-
-/*Parallax*/
-
-/* ============================================================
-  SECTIONS
-============================================================ */
-.top {
-	width: 65%;
+.content {
+	background-color: rgb(255,255,250);
 }
 
 section.module:last-child {
   margin-bottom: 0;
 }
-section.module h2 {
-  margin-bottom: 40px;
-  font: 100 15px/2.5 Helvetica, Verdana, sans-serif;
-  color: rgb(54,58,60);
-  font-size: 30px;
-}
-section.module p {
-  margin-bottom: 40px;
-  font-size: 16px;
-  font-weight: 300;
-  color: rgb(54,58,60);
-}
+
 section.module p:last-child {
   margin-bottom: 0;
 }
 section.module.content {
+	width: 100%;
   padding: 40px 0;
 }
 section.module.parallax {
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: center;
+	align-items: flex-start;
 }
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
@@ -168,42 +121,55 @@ section.module.parallax h1 {
   margin: 0px;
 }
 
-@media all and (min-width: 600px) {
-  section.module h2 {
-    font-size: 40px;
-  }
-  section.module p {
-    font-size: 40px;
-  }
-  section.module.parallax h1 {
-    font-size: 40px;
-  }
-}
-@media all and (min-width: 960px) {
-  section.module.parallax h1 {
-    font-size: 40px;
-  }
-}
-section.module.parallax-1 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-height: 500px;
-  /*background-image: url("/shared/img/codepic2.png");*/
-  /*background-position: 0% 10%;*/
-  /*background-size: 700px 500px;*/
 
+
+
+section.module.parallax-1 {
+	height: 400px;
+  	background-image: url("/shared/img/saltLakeCity.jpg"); 
+  	/*background-position: 0% 20%;*/
+	    /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;*/
+  background-size: cover;
+  /*background-attachment: fixed;*/
 }
+
 section.module.parallax-2 {
-  background-image: url("/shared/img/pinkhouse.jpg");
-   background-position: 50% 50%;
-   height: 800px;
+  /*background-image: url("/shared/img/keyboard.jpg");*/
+   /*background-position: 0% -30%;*/
+   height: 400px;
+   background-size: cover;
+   background-attachment: fixed;
 }
 section.module.parallax-3 {
-  background-image: url("/shared/img/street.jpg");
-     background-position: 50% 30%;
-	 height: 600px;
+  /*background-image: url("/shared/img/street.jpg");*/
+     /*background-position: 50% 30%;*/
+	 height: 400px;
+	 background-size: cover;
+	 background-attachment: fixed;
+}
+
+
+@media (min-width: 1200px) {
+  section.module.parallax-1 {
+	height: 450px;
+  	background-size: cover;
+	}
+}
+
+@media (min-width: 1350px) {
+  section.module.parallax-1 {
+	height: 500px;
+  	background-size: cover;
+	}
+}
+
+@media (min-width: 1600px) {
+  section.module.parallax-1 {
+	height: 600px;
+  	background-size: cover;
+	}
 }
 
 /*Portfolio/////////*/
@@ -334,4 +300,126 @@ section.module.parallax-3 {
 
 .bottomText li {
 	margin: 5px;
+}
+
+.nameClip {
+	-webkit-clip-path: url('#svgTextPath');
+	height: 500px;
+	width: 100%;
+	background-color: white;
+}
+
+/*ABOUT ME Parallax*/
+
+
+section.module.parallax {
+  background-repeat: no-repeat;
+  	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.greenBar {
+	height: 75px;
+  /*background-image: url("/shared/img/watarun.jpg");*/
+  background-color: rgb(75, 185, 57);
+  	/*background-size: contain;*/
+	  
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: center;
+	  /*background-color: rgb(54,58,60);*/
+  	background-attachment: fixed;
+}
+
+section.module.parallax-2.about {
+  background-image: url("/shared/img/keyboard.jpg");
+   /*background-position: 0% -30%;*/
+   height: 400px;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.aboutParagraph {
+	font: 100 24px Helvetica, Verdana, sans-serif;
+	text-align: justify;
+	color: rgb(54,58,60);
+	margin-left: 40px;
+}
+
+section.module.parallax-3.about {
+  background-image: url("/shared/img/street.jpg");
+     /*background-position: 50% 30%;*/
+	 height: 400px;
+	 background-size: cover;
+	 background-attachment: fixed;
+}
+
+
+@media (min-width: 1200px) {
+  section.module.parallax-1.about {
+	height: 450px;
+  	background-size: cover;
+	}
+}
+
+@media (min-width: 1350px) {
+  section.module.parallax-1.about {
+	height: 500px;
+  	background-size: cover;
+	}
+}
+
+@media (min-width: 1600px) {
+  section.module.parallax-1.about {
+	height: 600px;
+  	background-size: cover;
+	}
+}
+
+.headshotSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.headshot {
+	border: 5px solid rgb(54,58,60);
+	border-radius: 50%;
+}
+
+.equalsSign {
+	font-size: 150px;
+	color: rgb(54,58,60);
+}
+
+.codeSnippet {
+	font-size: 20px;
+}
+
+.technologiesTitle {
+	font: 100 30px Helvetica, Verdana, sans-serif;
+	color: rgb(54,58,60);
+	margin-bottom: 40px;
+	font-weight: bold;
+	margin-left: 40px;
+}
+
+.techImages {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+	align-content: space-around;
+}
+
+.techImages img {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
 }

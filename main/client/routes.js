@@ -25,6 +25,7 @@ angular.module("portfolio")
 				templateUrl: "html/contact/contact.html",
 				controller: "contactCtrl"
 			});
+
 	
 		$urlRouterProvider.otherwise("/home");
 		
