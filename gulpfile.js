@@ -49,4 +49,8 @@ gulp.task('javascriptServerFeatures', function() {
 		.pipe(gulp.dest('./distserver/features/'))
 });
 
-gulp.task('default', ['javascriptClient', 'javascriptServerConfig','javascriptServerFeatures', 'html']);
+gulp.task("heroku:production", function(){
+    // console.log('hello'); // the task does not need to do anything.
+});
+
+gulp.task('default', ['javascriptClient', 'javascriptServerConfig','javascriptServerFeatures', 'html', 'heroku:production']);
