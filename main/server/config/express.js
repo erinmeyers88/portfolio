@@ -25,7 +25,7 @@ module.exports = function () {
 
 
     // static assets folder (angular app)
-    app.use(express.static('./core/client'));
+    app.use(express.static('./main/client'));
 
     return app;
 };

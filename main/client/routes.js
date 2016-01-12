@@ -4,25 +4,25 @@ angular.module("portfolio")
 		$stateProvider
 			.state("home", {
 				url: "/home",
-				templateUrl: "html/home/home.html",
+				templateUrl: "features/home/home.html",
 				controller: "homeCtrl"
 			})
 			
 			.state("aboutme", {
 				url: "/aboutme",
-				templateUrl: "html/aboutMe/aboutMe.html",
+				templateUrl: "features/aboutMe/aboutMe.html",
 				controller: "aboutMeCtrl"
 			})
 			
 			.state("portfolio", {
 				url: "/portfolio",
-				templateUrl: "html/portfolio/portfolio.html",
+				templateUrl: "features/portfolio/portfolio.html",
 				controller: "portfolioCtrl"
 			})
 			
 			.state("contact", {
 				url: "/contact",
-				templateUrl: "html/contact/contact.html",
+				templateUrl: "features/contact/contact.html",
 				controller: "contactCtrl"
 			});
 

@@ -39,7 +39,7 @@ var express = require('express'),
 var db = mongoose(),
     app = express();
 
-app.use(express.static('./public/'));
+app.use(express.static('./main/client'));
 
 // Let's listen for incoming calls!
 app.listen(port, function () {

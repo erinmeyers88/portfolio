@@ -3,7 +3,7 @@ angular.module("portfolio")
 
 		return {
 			restrict: "E",
-			templateUrl: "html/menu/menu.html",
+			templateUrl: "features/menu/menu.html",
 			controller: function ($scope, $location) {
 				$scope.url = $location.url();
 
