@@ -29,7 +29,15 @@ angular.module('portfolio')
 				technologies: ["AngularJS", "Google Maps API", "REST Countries API", "CSS"],
 				thumbnail: "./shared/img/traveltracker.png",
 				url: "http://erinmeyers88.github.io/TravelTrackerWithAngularMaterial/"
-			}		
+			},
+			{
+				title: "Kay Kennerty Realty",
+				description: "A basic website for a real estate agent.",
+				features: ["View Kay's experience", "View homebuying and area-specific resourses"],
+				technologies: ["AngularJS", "CSS"],
+				thumbnail: "./shared/img/kaykennerty.png",
+				url: "http://www.danielkvincent.com"
+			}			
 		];
 		
 		
