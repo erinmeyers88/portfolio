@@ -202,13 +202,13 @@ section.module.parallax-3 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	width: 100%;
+	width: 98%;
 	height: 50%;
 }
 
 .thumbnail {
-	height: 85%;
-	width: 35%;
+	height: 80%;
+	width: 40%;
 	box-shadow: 0 0 2px rgb(54,58,60);
 	border-radius: 3px;
 }
