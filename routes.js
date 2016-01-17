@@ -2,12 +2,6 @@ angular.module("portfolio")
 	.config(function ($stateProvider, $urlRouterProvider) {
 		
 		$stateProvider
-			.state("home", {
-				url: "/home",
-				templateUrl: "features/home/home.html",
-				controller: "homeCtrl"
-			})
-			
 			.state("aboutme", {
 				url: "/aboutme",
 				templateUrl: "features/aboutMe/aboutMe.html",
@@ -27,6 +21,6 @@ angular.module("portfolio")
 			});
 
 	
-		$urlRouterProvider.otherwise("/home");
+		$urlRouterProvider.otherwise("/aboutme");
 		
 	});

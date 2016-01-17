@@ -1,11 +1,9 @@
 <header>
 	<div class="menuLinks">
-		<div ui-sref="aboutme" ng-class="{'bold': url === '/aboutme'}"> &lt; About Me &gt;</div>
+		<div ui-sref="aboutme" ng-class="{'bold': url === '/aboutme'}" style="cursor:pointer"> &lt; About Me &gt;</div>
 		<div>|</div> 
-		<div ui-sref="portfolio" ng-class="{'bold': url === '/portfolio'}">&#123; &#123; Portfolio &#125; &#125;</div>
+		<div ui-sref="portfolio" ng-class="{'bold': url === '/portfolio'}" style="cursor:pointer">&#123; &#123; Portfolio &#125; &#125;</div>
 		<div>|</div> 
-		<div ui-sref="contact" ng-class="{'bold': url === '/contact'}"> &#91; Contact &#93;</div>
-		<div ng-show="showHome()">|</div> 
-		<div ui-sref="home" ng-show="showHome()">(Home)</div>
+		<div ui-sref="contact" ng-class="{'bold': url === '/contact'}" style="cursor:pointer"> &#91; Contact &#93;</div>
 	</div>
 </header>
