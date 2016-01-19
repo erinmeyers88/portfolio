@@ -11,10 +11,13 @@
 					<div class="title">{{project.title}}</div>
 					<div class="descriptionText">{{project.description}}</div>
 				</div>
+				<div class="buttons">
+				<a class="viewButton" ng-click="showInfo = !showInfo" target="_blank">Specs</a>
 				<a class="viewButton" ng-href="{{project.url}}" target="_blank">View</a>
+				</div>
 			</div>
 		</div>
-		<div class="projectBottom">
+		<div class="projectBottom" ng-show="showInfo">
 			<div class="bottomSection">
 				<div class="bottomTitle">Features</div>
 				<div class="bottomText">

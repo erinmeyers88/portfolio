@@ -1,13 +1,14 @@
 angular.module('portfolio')
     .controller('portfolioCtrl', function ($scope, $location) {
-
+		
+		$scope.showInfo = false;
 
 		$scope.portfolioData = [
 		
 			{
 				title: "SkyNautilus",
 				description: "A new spin on a flight search engine and travel planning.",
-				features: ["Login with your Google account", "Search for a flight", "Modify your search", "Narrow down your search results", 'Save the itinerary to a "trip"', "View and edit saved trips"],
+				features: ["Login with your Google account", "Search for a flight", "Modify your search", "Filter search resulsts by city and airline", 'Save the itinerary to a "trip"', "View and edit saved trips"],
 				technologies: ["AngularJS", "Node.js", "Express", "MongoDB", "Passport Google OAuth", "Google QPX API", "CSS"],
 				thumbnail: "./shared/img/SkyNautilus.png",
 				url: "http://www.skynautilus.com"
