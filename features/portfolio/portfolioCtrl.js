@@ -7,7 +7,7 @@ angular.module('portfolio')
 			
 			{
 				title: "FamGraph",
-				description: "Compelling visualizations of your family history data.",
+				description: "Interactive visualizations of your family history data.",
 				features: ["View interactive charts and manipulate data to learn more about your past", "Charts include: births per month, lifespan, nested family tree, and total living relatives", "Log in with your FamilySearch.org account (pending)"],
 				technologies: ["D3.js", "AngularJS", "ES2015", "Node.js", "Express", "MongoDB", "Mongoose", "MongoLab", "FamilySearch.org API", "Stylus", "Gulp", "Underscore.js", "Font Awesome", "HTML", "CSS"],
 				thumbnail: "./shared/img/famgraph.png",
