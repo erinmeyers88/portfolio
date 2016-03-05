@@ -24,8 +24,17 @@ angular.module('portfolio')
 			},
 			
 			{
+				title: "Stan Huff Realty",
+				description: "Responsive real estate site.",
+				features: ["View property listings", "Learn more about Stan's background and services"],
+				technologies: ["HTML", "CSS", "Bootstrap", "Font Awesome", "Myrsol CMS"],
+				thumbnail: "./shared/img/stanhuff.png",
+				url: "http://www.stanhuff.com"
+			},
+			
+			{
 				title: "Kay Kennerty Realty",
-				description: "A real estate agent website.",
+				description: "Responsive real estate site.",
 				features: ["View Kay's experience", "View homebuying and area-specific resourses"],
 				technologies: ["AngularJS", "HTML", "CSS", "Font Awesome"],
 				thumbnail: "./shared/img/kaykennerty.png",
